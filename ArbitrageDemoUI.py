@@ -99,7 +99,7 @@ class Ui_ArbitrageMonitor(object):
 
     def do_btn25(self, event):  # 消息：关于
         reply = QtWidgets.QMessageBox.about(self.centralwidget, "关于", "本软件遵循GPL协议，旨在监控商品期货价差。由于数据来源为新浪接口，所以会有所延迟，敬请见谅。作者：张逸辰，联系方式：ethan@yczhang.cn")
-        self.echo(reply)
+        #self.echo(reply)
 
     def retranslateUi(self, ArbitrageMonitor):
         _translate = QtCore.QCoreApplication.translate

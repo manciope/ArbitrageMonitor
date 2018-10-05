@@ -3,6 +3,7 @@ import cal_func as cf
 from PyQt5 import QtCore, QtGui, QtWidgets
 import _thread
 import time
+import sys
 import numpy as np
 
 def updateUi(ui):
