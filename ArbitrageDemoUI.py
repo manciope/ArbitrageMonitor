@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\CTA\ArbitrageDemo.ui'
+# Form implementation generated from reading ui file 'd:\ArbitrageMonitor\ArbitrageDemo.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -11,14 +11,14 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_ArbitrageMonitor(object):
     def setupUi(self, ArbitrageMonitor):
         ArbitrageMonitor.setObjectName("ArbitrageMonitor")
-        ArbitrageMonitor.resize(1210, 537)
+        ArbitrageMonitor.resize(1512, 536)
         ArbitrageMonitor.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
         self.centralwidget = QtWidgets.QWidget(ArbitrageMonitor)
         self.centralwidget.setObjectName("centralwidget")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget.setGeometry(QtCore.QRect(10, 10, 1191, 481))
+        self.tableWidget.setGeometry(QtCore.QRect(10, 10, 1491, 481))
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(11)
+        self.tableWidget.setColumnCount(14)
         self.tableWidget.setRowCount(15)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setVerticalHeaderItem(0, item)
@@ -73,12 +73,18 @@ class Ui_ArbitrageMonitor(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(10, item)
         item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(12, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(13, item)
+        item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setItem(2, 1, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setItem(2, 4, item)
         ArbitrageMonitor.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(ArbitrageMonitor)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1210, 23))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1512, 23))
         self.menubar.setObjectName("menubar")
         self.menuAbout = QtWidgets.QMenu(self.menubar)
         self.menuAbout.setObjectName("menuAbout")
@@ -96,10 +102,6 @@ class Ui_ArbitrageMonitor(object):
 
         self.retranslateUi(ArbitrageMonitor)
         QtCore.QMetaObject.connectSlotsByName(ArbitrageMonitor)
-
-    def do_btn25(self, event):  # 消息：关于
-        reply = QtWidgets.QMessageBox.about(self.centralwidget, "关于", "本软件遵循GPL协议，旨在监控商品期货价差。由于数据来源为新浪接口，所以会有所延迟，敬请见谅。作者：张逸辰，联系方式：ethan@yczhang.cn")
-        #self.echo(reply)
 
     def retranslateUi(self, ArbitrageMonitor):
         _translate = QtCore.QCoreApplication.translate
@@ -133,7 +135,7 @@ class Ui_ArbitrageMonitor(object):
         item = self.tableWidget.verticalHeaderItem(13)
         item.setText(_translate("ArbitrageMonitor", "铜/锌"))
         item = self.tableWidget.verticalHeaderItem(14)
-        item.setText(_translate("ArbitrageMonitor", "15*金/银"))
+        item.setText(_translate("ArbitrageMonitor", "金/银"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("ArbitrageMonitor", "起始时间"))
         item = self.tableWidget.horizontalHeaderItem(1)
@@ -147,28 +149,34 @@ class Ui_ArbitrageMonitor(object):
         item = self.tableWidget.horizontalHeaderItem(5)
         item.setText(_translate("ArbitrageMonitor", "前值"))
         item = self.tableWidget.horizontalHeaderItem(6)
-        item.setText(_translate("ArbitrageMonitor", "最小值"))
+        item.setText(_translate("ArbitrageMonitor", "前10个交易日"))
         item = self.tableWidget.horizontalHeaderItem(7)
-        item.setText(_translate("ArbitrageMonitor", "10%分位"))
+        item.setText(_translate("ArbitrageMonitor", "前20个交易日"))
         item = self.tableWidget.horizontalHeaderItem(8)
-        item.setText(_translate("ArbitrageMonitor", "均值"))
+        item.setText(_translate("ArbitrageMonitor", "前30个交易日"))
         item = self.tableWidget.horizontalHeaderItem(9)
-        item.setText(_translate("ArbitrageMonitor", "90%分位"))
+        item.setText(_translate("ArbitrageMonitor", "最小值"))
         item = self.tableWidget.horizontalHeaderItem(10)
+        item.setText(_translate("ArbitrageMonitor", "5%分位"))
+        item = self.tableWidget.horizontalHeaderItem(11)
+        item.setText(_translate("ArbitrageMonitor", "均值"))
+        item = self.tableWidget.horizontalHeaderItem(12)
+        item.setText(_translate("ArbitrageMonitor", "95%分位"))
+        item = self.tableWidget.horizontalHeaderItem(13)
         item.setText(_translate("ArbitrageMonitor", "最大值"))
         __sortingEnabled = self.tableWidget.isSortingEnabled()
         self.tableWidget.setSortingEnabled(False)
         self.tableWidget.setSortingEnabled(__sortingEnabled)
-        self.menuAbout.setTitle(_translate("ArbitrageMonitor", "文件"))
-        self.actionAbout_Me.setText(_translate("ArbitrageMonitor", "关于"))
-        self.actionExit.setText(_translate("ArbitrageMonitor", "退出"))
+        self.menuAbout.setTitle(_translate("ArbitrageMonitor", "About"))
+        self.actionAbout_Me.setText(_translate("ArbitrageMonitor", "About Me"))
+        self.actionExit.setText(_translate("ArbitrageMonitor", "Exit"))
         self.actionExit.setShortcut('Ctrl+Q')
         self.actionExit.setStatusTip('退出应用程序')
         self.actionExit.triggered.connect(QtWidgets.qApp.quit)
 
         self.actionAbout_Me.triggered.connect(self.do_btn25)
 
-
-
-
+    def do_btn25(self, event):  # 消息：关于
+        reply = QtWidgets.QMessageBox.about(self.centralwidget, "关于",
+                                            "本软件遵循GPL协议，旨在监控商品期货价差。由于数据来源为新浪接口，所以会有所延迟，敬请见谅。作者：张逸辰，联系方式：ethan@yczhang.cn")
 

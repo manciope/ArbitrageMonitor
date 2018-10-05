@@ -14,28 +14,28 @@
         <counts>
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="20" />
+          <entry key="py" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="20" />
+          <entry key="Python" value="218" />
         </counts>
       </usages-collector>
     </session>
@@ -45,10 +45,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="59" column="79" lean-forward="true" selection-start-line="59" selection-start-column="79" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="247">
+              <caret line="408" column="40" lean-forward="true" selection-start-line="408" selection-start-column="40" selection-end-line="408" selection-end-column="40" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#176#26007#0" />
+                <marker date="1538745504678" expanded="true" signature="153:154" ph="..." />
               </folding>
             </state>
           </provider>
@@ -57,13 +59,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArbitrageDemoUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="100" column="64" selection-end-line="174" />
+            <state relative-caret-position="463">
+              <caret line="180" column="122" selection-start-line="180" selection-start-column="122" selection-end-line="180" selection-end-column="122" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>percentile90</find>
+      <find>percentile10</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>percentile95</replace>
+      <replace>percentile5</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,14 +84,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="G:/Anaconda3/Scripts/main.spec" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/cal_func.py" />
         <option value="$PROJECT_DIR$/ArbitrageDemoUI.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-9" />
-    <option name="width" value="1289" />
+    <option name="width" value="2117" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -159,14 +172,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1289" height="1040" extended-state="0" />
+    <frame x="-9" y="0" width="2117" height="1040" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24940048" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15007216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -193,8 +206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cal_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="360">
+          <caret line="64" column="103" lean-forward="true" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -203,17 +216,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArbitrageDemoUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="100" column="64" selection-end-line="174" />
+        <state relative-caret-position="463">
+          <caret line="180" column="122" selection-start-line="180" selection-start-column="122" selection-end-line="180" selection-end-column="122" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="59" column="79" lean-forward="true" selection-start-line="59" selection-start-column="79" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="247">
+          <caret line="408" column="40" lean-forward="true" selection-start-line="408" selection-start-column="40" selection-end-line="408" selection-end-column="40" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#176#26007#0" />
+            <marker date="1538745504678" expanded="true" signature="153:154" ph="..." />
           </folding>
         </state>
       </provider>

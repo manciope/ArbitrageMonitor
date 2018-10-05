@@ -47,6 +47,9 @@ def difference(symbol1,symbol2,threshold='2018-01-01', method='minus',quant1=1,q
     price2 = round(temp2.close[len(result) - 1], 2)
     latesest_diff=round(result.close[len(result)-1],2)
     pre_diff=round(result.close[len(result)-2],2)
+    diff_10=round(result.close[len(result)-11],2)
+    diff_20 = round(result.close[len(result) - 21], 2)
+    diff_30 = round(result.close[len(result) - 31], 2)
  #   sample_number=len(result)
     min_time= result.time[0].strftime("%Y-%m-%d")
     max_time= result.time[len(result)-1].strftime("%Y-%m-%d")
@@ -54,12 +57,12 @@ def difference(symbol1,symbol2,threshold='2018-01-01', method='minus',quant1=1,q
     avg_diff= round(np.mean(result.close),2)
 
     min_diff=round(np.min(result.close),2)
-    percentile10=round(np.percentile(result.close,10),2)
-    percentile90=round(np.percentile(result.close,90),2)
+    percentile5=round(np.percentile(result.close,5),2)
+    percentile95=round(np.percentile(result.close,95),2)
     max_diff=round(np.max(result.close),2)
 
     print("handling "+ symbol1 +" and "+symbol2)
-    return min_time, max_time,price1,price2,latesest_diff, pre_diff, min_diff,percentile10,avg_diff,percentile90,max_diff
+    return min_time, max_time,price1,price2,latesest_diff, pre_diff, diff_10, diff_20, diff_30, min_diff,percentile5,avg_diff,percentile95,max_diff
 
 
 #difference('rb0','ru0',method='divide')

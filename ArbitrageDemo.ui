@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1210</width>
-    <height>537</height>
+    <width>1512</width>
+    <height>536</height>
    </rect>
   </property>
   <property name="contextMenuPolicy">
@@ -22,7 +22,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>1191</width>
+      <width>1491</width>
       <height>481</height>
      </rect>
     </property>
@@ -133,12 +133,27 @@
     </column>
     <column>
      <property name="text">
+      <string>前10个交易日</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>前20个交易日</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>前30个交易日</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
       <string>最小值</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>2x下轨</string>
+      <string>5%分位</string>
      </property>
     </column>
     <column>
@@ -148,7 +163,7 @@
     </column>
     <column>
      <property name="text">
-      <string>2x上轨</string>
+      <string>95%分位</string>
      </property>
     </column>
     <column>
@@ -173,7 +188,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1210</width>
+     <width>1512</width>
      <height>23</height>
     </rect>
    </property>
