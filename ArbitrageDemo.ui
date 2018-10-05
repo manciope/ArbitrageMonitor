@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArbitrageMonitor</class>
+ <widget class="QMainWindow" name="ArbitrageMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1210</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ArbitrageMonitor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1191</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>豆油/豆粕</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>豆粕-菜粕</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>豆油-棕榈油</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>菜油-豆油</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>菜油-棕榈油</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>菜油/菜粕</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>玉米淀粉-玉米</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>螺纹钢-热卷</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>螺纹钢/铁矿石</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>焦炭/焦煤</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>L-PP</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>PP-3*MA</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>铝/锌</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>铜/锌</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>金/银</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>起始时间</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>最后时间</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>价格1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>价格2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>现值</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>前值</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>最小值</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>2x下轨</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>均值</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>2x上轨</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>最大值</string>
+     </property>
+    </column>
+    <item row="2" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1210</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Me"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_Me">
+   <property name="text">
+    <string>About Me</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
