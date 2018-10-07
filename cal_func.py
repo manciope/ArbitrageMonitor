@@ -15,9 +15,11 @@ def fetch_data(symbol, interval='Daily'):
         url = r'http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine30m?symbol=' + symbol
     elif interval == '60m':
         url = r'http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine30m?symbol=' + symbol
-
-    res = urllib.request.urlopen(url)
-    html = res.read().decode('utf-8')
+    try:
+        res = urllib.request.urlopen(url)
+    except:
+        pass
+    html = res.read()
     temp = pd.read_json(html)
     temp.columns = ['time', 'open', 'high', 'low', 'close', 'volumn']
     temp.sort_values(by='time', inplace=True)

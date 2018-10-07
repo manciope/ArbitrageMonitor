@@ -1,6 +1,5 @@
 import _thread
 import sys
-import time
 
 import cal_func as cf
 from ComodityUI import *
@@ -167,7 +166,7 @@ def update_tab1(ui):
         _thread.start_new_thread(f14, ())
 
     except:
-        print("Error: 无法启动线程")
+        pass
 
 
 def update_tab2(ui):
@@ -596,6 +595,5 @@ if __name__ == '__main__':
     ui.setupUi(MainWindow)
     update_tab1(ui)
     update_tab2(ui)
-    time.sleep(1)
     MainWindow.show()
     sys.exit(app.exec_())
