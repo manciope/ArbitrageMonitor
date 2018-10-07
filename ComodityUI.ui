@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ComodityMonitor</class>
+ <widget class="QMainWindow" name="ComodityMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1535</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ComodityMonitor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1521</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>价差监控</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1491</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>豆油/豆粕</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>豆粕-菜粕</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>豆油-棕榈油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>菜油-豆油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>菜油-棕榈油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>菜油/菜粕</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>玉米淀粉-玉米</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>螺纹钢-热卷</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>螺纹钢/铁矿石</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>焦炭/焦煤</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>L-PP</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>PP-3*MA</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>铝/锌</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>铜/锌</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>金/银</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>起始时间</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最后时间</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格1</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>价格2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>现值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>前值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>前10个交易日</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>前20个交易日</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>前30个交易日</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最小值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>5%分位</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>均值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>95%分位</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最大值</string>
+       </property>
+      </column>
+      <item row="2" column="1">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>趋势择时</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1501</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>豆一</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>豆油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>豆粕</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>菜油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>菜粕</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>棕榈油</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>玉米淀粉</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>玉米</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>苹果</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>白糖</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>棉花</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>鸡蛋</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>橡胶</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>螺纹钢</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>热卷</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>铁矿石</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>焦炭</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>焦煤</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>动力煤</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>玻璃</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>硅铁</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>锰硅</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>塑料</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>PVC</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>聚丙烯</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>PTA</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>甲醇</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>铝</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>锌</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>金</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>银</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>铜</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>最新价格</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ATR</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>5日涨幅</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>10日涨幅</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>30日涨幅</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>60日涨幅</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>120日涨幅</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RSI 14</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/MA 5</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/MA 10</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/MA 30</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/MA 60</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/MA 120</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/H 5</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/H 10</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/H 30</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/H 60</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/H 120</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/L 5</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/L 10</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/L 30</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/L 60</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>C/L 120</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1535</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Me"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_Me">
+   <property name="text">
+    <string>About Me</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

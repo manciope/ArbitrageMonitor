@@ -14,67 +14,88 @@
         <counts>
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="218" />
+          <entry key="Python Console" value="521" />
+          <entry key="py" value="2515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="218" />
+          <entry key="Python" value="3036" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cal_func.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="408" column="40" lean-forward="true" selection-start-line="408" selection-start-column="40" selection-end-line="408" selection-end-column="40" />
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
-                <element signature="e#176#26007#0" />
-                <marker date="1538745504678" expanded="true" signature="153:154" ph="..." />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#136#1235#0" />
+                <element signature="e#1112#2849#0" />
+                <element signature="e#3014#5855#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ArbitrageDemoUI.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="180" column="122" selection-start-line="180" selection-start-column="122" selection-end-line="180" selection-end-column="122" />
+            <state relative-caret-position="190">
+              <caret line="171" column="20" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#178#9454#0" />
+                <element signature="e#9475#30179#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>percentile90</find>
       <find>percentile10</find>
+      <find>inserttable1</find>
+      <find>tab_2</find>
+      <find>print</find>
+      <find>@retry(wait_fixed=500)</find>
     </findStrings>
     <replaceStrings>
       <replace>percentile95</replace>
       <replace>percentile5</replace>
+      <replace>insert_table1</replace>
+      <replace># print</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -84,16 +105,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="G:/Anaconda3/Scripts/main.spec" />
-        <option value="$PROJECT_DIR$/cal_func.py" />
         <option value="$PROJECT_DIR$/ArbitrageDemoUI.py" />
+        <option value="$PROJECT_DIR$/try.py" />
+        <option value="$PROJECT_DIR$/ComodityUI.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/cal_func.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-9" />
-    <option name="width" value="2117" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1280" />
+    <option name="width" value="1280" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -101,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,10 +135,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cal_func.py" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/cal_func.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -172,22 +196,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="2117" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15007216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12293144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289183" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32321042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39911798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289183" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3289183" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32855567" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -197,17 +222,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://G:/Anaconda3/Scripts/main.spec">
+    <entry file="file://G:/Anaconda3/Scripts/main.spec" />
+    <entry file="file://D:/CTA/get_sina_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cal_func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="64" column="103" lean-forward="true" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
+        <state relative-caret-position="1071">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="30" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -216,19 +235,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArbitrageDemoUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="180" column="122" selection-start-line="180" selection-start-column="122" selection-end-line="180" selection-end-column="122" />
+        <state relative-caret-position="3363">
+          <caret line="177" selection-start-line="172" selection-end-line="180" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/try.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ComodityUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="401" column="58" lean-forward="true" selection-start-line="401" selection-start-column="58" selection-end-line="401" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Anaconda3/Lib/site-packages/pandas/io/json/json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="852" selection-start-line="852" selection-end-line="852" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cal_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#136#1235#0" />
+            <element signature="e#1112#2849#0" />
+            <element signature="e#3014#5855#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="408" column="40" lean-forward="true" selection-start-line="408" selection-start-column="40" selection-end-line="408" selection-end-column="40" />
+        <state relative-caret-position="190">
+          <caret line="171" column="20" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#176#26007#0" />
-            <marker date="1538745504678" expanded="true" signature="153:154" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#178#9454#0" />
+            <element signature="e#9475#30179#0" />
           </folding>
         </state>
       </provider>
