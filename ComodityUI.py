@@ -284,7 +284,7 @@ class Ui_ComodityMonitor(object):
         item = self.tableWidget.horizontalHeaderItem(10)
         item.setText(_translate("ComodityMonitor", "5%分位"))
         item = self.tableWidget.horizontalHeaderItem(11)
-        item.setText(_translate("ComodityMonitor", "均值"))
+        item.setText(_translate("ComodityMonitor", "中位数"))
         item = self.tableWidget.horizontalHeaderItem(12)
         item.setText(_translate("ComodityMonitor", "95%分位"))
         item = self.tableWidget.horizontalHeaderItem(13)

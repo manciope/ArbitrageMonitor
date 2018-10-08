@@ -17,14 +17,17 @@ def fetch_data(symbol, interval='Daily'):
         url = r'http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine30m?symbol=' + symbol
     try:
         res = urllib.request.urlopen(url)
+        html = res.read()
+        temp = pd.read_json(html)
+        temp.columns = ['time', 'open', 'high', 'low', 'close', 'volumn']
+        temp.sort_values(by='time', inplace=True)
+        temp = temp.reset_index(drop=True)
+        return temp
+
     except:
         pass
-    html = res.read()
-    temp = pd.read_json(html)
-    temp.columns = ['time', 'open', 'high', 'low', 'close', 'volumn']
-    temp.sort_values(by='time', inplace=True)
-    temp = temp.reset_index(drop=True)
-    return temp
+
+
 
 
 def difference(symbol1, symbol2, threshold='2018-01-01', method='minus', quant1=1, quant2=1):
@@ -58,7 +61,7 @@ def difference(symbol1, symbol2, threshold='2018-01-01', method='minus', quant1=
     min_time = result.time[0].strftime("%Y-%m-%d")
     max_time = result.time[len(result) - 1].strftime("%Y-%m-%d")
 
-    avg_diff = round(np.mean(result.close), 2)
+    mid_diff = round(np.median(result.close), 2)
 
     min_diff = round(np.min(result.close), 2)
     percentile5 = round(np.percentile(result.close, 5), 2)
@@ -66,7 +69,7 @@ def difference(symbol1, symbol2, threshold='2018-01-01', method='minus', quant1=
     max_diff = round(np.max(result.close), 2)
 
     # print("handling "+ symbol1 +" and "+symbol2)
-    return min_time, max_time, price1, price2, latesest_diff, pre_diff, diff_10, diff_20, diff_30, min_diff, percentile5, avg_diff, percentile95, max_diff
+    return min_time, max_time, price1, price2, latesest_diff, pre_diff, diff_10, diff_20, diff_30, min_diff, percentile5, mid_diff, percentile95, max_diff
 
 
 def trend(symbol, threshold='2018-01-01'):
